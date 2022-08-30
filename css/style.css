@@ -1398,7 +1398,9 @@ a:focus {
   .contact .container-fluid {
     background: none;
   }
-
+  .contact .row {
+    margin-bottom: 0;
+  }
   .contact .contact-form {
     padding: 90px 40px;
     margin-top: 20px;
