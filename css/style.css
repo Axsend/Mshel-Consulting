@@ -4,21 +4,21 @@
 body {
   color: #797979;
   background: #ffffff;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1,
-h2,
-h3,
+h2, 
+h3, 
 h4,
-h5,
+h5, 
 h6 {
   color: #414141;
 }
 
 a {
   color: #313131;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 a:hover,
@@ -72,16 +72,16 @@ a:focus {
   background: #ffffff;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 0.3s ease-out, visibility 0s linear 0.3s;
-  -o-transition: opacity 0.3s ease-out, visibility 0s linear 0.3s;
-  transition: opacity 0.3s ease-out, visibility 0s linear 0.3s;
+  -webkit-transition: opacity .3s ease-out, visibility 0s linear .3s;
+  -o-transition: opacity .3s ease-out, visibility 0s linear .3s;
+  transition: opacity .3s ease-out, visibility 0s linear .3s;
   z-index: 999;
 }
 
 #loader.show {
-  -webkit-transition: opacity 0.6s ease-out, visibility 0s linear 0s;
-  -o-transition: opacity 0.6s ease-out, visibility 0s linear 0s;
-  transition: opacity 0.6s ease-out, visibility 0s linear 0s;
+  -webkit-transition: opacity .6s ease-out, visibility 0s linear 0s;
+  -o-transition: opacity .6s ease-out, visibility 0s linear 0s;
+  transition: opacity .6s ease-out, visibility 0s linear 0s;
   visibility: visible;
   opacity: 1;
 }
@@ -98,21 +98,13 @@ a:focus {
 }
 
 @-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .back-to-top {
@@ -134,15 +126,16 @@ a:focus {
 }
 
 .back-to-top:hover i {
-  color: #414141;
+  color: #1c3448;
 }
+
 
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
 .navbar {
   position: relative;
-  transition: 0.5s;
+  transition: .5s;
   z-index: 999;
 }
 
@@ -150,7 +143,7 @@ a:focus {
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
 }
 
 .navbar .navbar-brand {
@@ -159,7 +152,8 @@ a:focus {
   line-height: 0px;
   font-weight: 700;
   letter-spacing: 2px;
-  transition: 0.5s;
+  transition: .5s;
+  
 }
 
 .navbar .navbar-brand img {
@@ -176,73 +170,74 @@ a:focus {
 
 @media (min-width: 992px) {
   .navbar {
-    position: absolute;
-    width: 100%;
-    padding: 30px 60px;
-    background: transparent !important;
-    border-bottom: 1px dashed rgba(256, 256, 256, 0.2);
-    z-index: 9;
+      position: absolute;
+      width: 100%;
+      padding: 30px 60px;
+      background: transparent !important;
+      border-bottom: 1px dashed rgba(256, 256, 256, .2);
+      z-index: 9;
   }
-
+  
   .navbar.nav-sticky {
-    padding: 10px 60px;
-    background: #ffffff !important;
+      padding: 10px 60px;
+      background: #ffffff !important;
   }
-
+  
   .navbar .navbar-brand {
-    color: #ffffff;
+      color: #ffffff;
   }
-
+  
   .navbar.nav-sticky .navbar-brand {
-    color: #1c3448;
+      color: #1c3448;
   }
 
   .navbar-light .navbar-nav .nav-link,
   .navbar-light .navbar-nav .nav-link:focus {
-    padding: 10px 10px 8px 10px;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 500;
+      padding: 10px 10px 8px 10px;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 500;
   }
-
+  
   .navbar-light.nav-sticky .navbar-nav .nav-link,
   .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
-    color: #414141;
+      color: #1c3448;
   }
 
   .navbar-light .navbar-nav .nav-link:hover,
   .navbar-light .navbar-nav .nav-link.active {
-    color: #111111;
+      color: #1c3448;
   }
-
+  
   .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
   .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-    color: #1c3448;
+      color: #1c3448;
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 991.98px) {   
   .navbar {
-    padding: 15px;
-    background: #ffffff !important;
+      padding: 15px;
+      background: #ffffff !important;
   }
-
+  
   .navbar .navbar-brand {
-    color: #1c3448;
+      color: #1c3448;
   }
-
+  
   .navbar .navbar-nav {
-    margin-top: 15px;
+      margin-top: 15px;
   }
-
+  
   .navbar a.nav-link {
-    padding: 5px;
+      padding: 5px;
   }
-
+  
   .navbar .dropdown-menu {
-    box-shadow: none;
+      box-shadow: none;
   }
 }
+
 
 /*******************************/
 /********** Hero CSS ***********/
@@ -267,11 +262,12 @@ a:focus {
   position: relative;
   text-align: right;
   padding-right: 75px;
+  padding-bottom: 40px;
 }
 
 .hero .hero-image img {
   max-width: 80%;
-  max-height: 80%;
+  max-height: 90%;
 }
 
 .hero .hero-content {
@@ -337,83 +333,84 @@ a:focus {
 
 @media (max-width: 991.98px) {
   .hero {
-    padding-top: 60px;
+      padding-top: 60px;
   }
-
+  
   .hero .hero-content {
-    padding: 0 15px;
+      padding: 0 15px;
   }
-
+  
   .hero .hero-text p {
-    font-size: 20px;
+      font-size: 20px;
   }
-
+  
   .hero .hero-text h1 {
-    font-size: 45px;
+      font-size: 45px;
   }
-
+  
   .hero .hero-text h2 {
-    font-size: 25px;
-    height: 25px;
+      font-size: 25px;
+      height: 25px;
   }
-
+  
   .hero .hero-btn .btn {
-    padding: 12px 30px;
-    letter-spacing: 1px;
+      padding: 12px 30px;
+      letter-spacing: 1px;
   }
 }
 
 @media (max-width: 767.98px) {
   .hero {
-    padding-top: 60px;
-    padding-bottom: 60px;
+      padding-top: 60px;
+      padding-bottom: 60px;
   }
-
+  
   .hero,
   .hero .hero-text,
   .hero .hero-btn {
-    width: 100%;
-    text-align: center;
+      width: 100%;
+      text-align: center;
   }
-
+  
   .hero .hero-text p {
-    font-size: 18px;
+      font-size: 18px;
   }
-
+  
   .hero .hero-text h1 {
-    font-size: 35px;
+      font-size: 35px;
   }
-
+  
   .hero .hero-text h2 {
-    font-size: 22px;
-    height: 22px;
+      font-size: 22px;
+      height: 22px;
   }
-
+  
   .hero .hero-btn .btn {
-    padding: 10px 15px;
-    letter-spacing: 1px;
+      padding: 10px 15px;
+      letter-spacing: 1px;
   }
 }
 
 @media (max-width: 575.98px) {
   .hero .hero-text p {
-    font-size: 16px;
+      font-size: 16px;
   }
-
+  
   .hero .hero-text h1 {
-    font-size: 30px;
+      font-size: 30px;
   }
-
+  
   .hero .hero-text h2 {
-    font-size: 18px;
-    height: 18px;
+      font-size: 18px;
+      height: 18px;
   }
-
+  
   .hero .hero-btn .btn {
-    padding: 8px 10px;
-    letter-spacing: 0;
+      padding: 8px 10px;
+      letter-spacing: 0;
   }
 }
+
 
 /*******************************/
 /******* Section Header ********/
@@ -467,9 +464,10 @@ a:focus {
 
 @media (max-width: 767.98px) {
   .section-header h2 {
-    font-size: 30px;
+      font-size: 30px;
   }
 }
+
 
 /*******************************/
 /********** About CSS **********/
@@ -478,6 +476,7 @@ a:focus {
   position: relative;
   width: 100%;
   margin: -45px 0 45px 0;
+  padding-top: 30px;
 }
 
 .about .col-lg-6 {
@@ -511,7 +510,9 @@ a:focus {
 .about .skills {
   margin-bottom: 30px;
 }
-
+.skills {
+  display: block;
+}
 .about .skill-name {
   margin-top: 15px;
 }
@@ -546,9 +547,10 @@ a:focus {
 
 @media (max-width: 991.98px) {
   .about .about-content {
-    padding: 45px 15px 0 15px;
+      padding: 45px 15px 0 15px;
   }
 }
+
 
 /*******************************/
 /******* Experience CSS ********/
@@ -564,7 +566,7 @@ a:focus {
 }
 
 .experience .timeline::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 2px;
   background: #1c3448;
@@ -592,7 +594,7 @@ a:focus {
 }
 
 .experience .timeline .timeline-item::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 16px;
   height: 16px;
@@ -609,20 +611,20 @@ a:focus {
 }
 
 .experience .timeline .timeline-item::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 46px;
-  right: 10px;
-  z-index: 1;
-  border: 10px solid;
-  border-color: transparent transparent transparent #dddddd;
+content: '';
+position: absolute;
+width: 0;
+height: 0;
+top: 46px;
+right: 10px;
+z-index: 1;
+border: 10px solid;
+border-color: transparent transparent transparent #dddddd;
 }
 
 .experience .timeline .timeline-item.right::before {
-  left: 10px;
-  border-color: transparent #dddddd transparent transparent;
+left: 10px;
+border-color: transparent #dddddd transparent transparent;
 }
 
 .experience .timeline .timeline-date {
@@ -652,7 +654,7 @@ a:focus {
   background: #ffffff;
   position: relative;
   border-right: 5px solid #dddddd;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 60px rgba(0, 0, 0, .08);
 }
 
 .experience .timeline .timeline-item.right .timeline-text {
@@ -680,50 +682,51 @@ a:focus {
 
 @media (max-width: 767.98px) {
   .experience .timeline::after {
-    left: 8px;
+      left: 8px;
   }
 
   .experience .timeline .timeline-item {
-    width: 100%;
-    padding-left: 38px;
+      width: 100%;
+      padding-left: 38px;
   }
-
+  
   .experience .timeline .timeline-item.left {
-    padding-right: 0;
+      padding-right: 0;
   }
-
+  
   .experience .timeline .timeline-item.right {
-    left: 0%;
-    padding-left: 38px;
+      left: 0%;
+      padding-left: 38px;
   }
 
-  .experience .timeline .timeline-item.left::after,
+  .experience .timeline .timeline-item.left::after, 
   .experience .timeline .timeline-item.right::after {
-    left: 0;
+      left: 0;
   }
-
+  
   .experience .timeline .timeline-item.left::before,
   .experience .timeline .timeline-item.right::before {
-    left: 18px;
-    border-color: transparent #dddddd transparent transparent;
+      left: 18px;
+      border-color: transparent #dddddd transparent transparent;
   }
-
+  
   .experience .timeline .timeline-item.left .timeline-date,
   .experience .timeline .timeline-item.right .timeline-date {
-    position: relative;
-    top: 0;
-    right: auto;
-    left: 0;
-    text-align: left;
-    margin-bottom: 10px;
+      position: relative;
+      top: 0;
+      right: auto;
+      left: 0;
+      text-align: left;
+      margin-bottom: 10px;
   }
-
+  
   .experience .timeline .timeline-item.left .timeline-text,
   .experience .timeline .timeline-item.right .timeline-text {
-    border-right: none;
-    border-left: 5px solid #dddddd;
+      border-right: none;
+      border-left: 5px solid #dddddd;
   }
 }
+
 
 /*******************************/
 /********* Service CSS *********/
@@ -754,16 +757,27 @@ a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #1c3448;
+  border: 1px solid #1c3448; 
   background: #ffffff;
 }
-
-.service .service-icon i {
+.service-icon img {
+  position: relative;
+  width: 150px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  color: #1c3448;
+  border: 1px solid #1c3448; 
+  justify-content: center;
+  background: #ffffff;
+  transition: .3s;
+}
+/* .service .service-icon i {
   position: relative;
   font-size: 60px;
   color: #1c3448;
-  transition: 0.3s;
-}
+  transition: .3s;
+} */
 
 .service .service-item:hover i {
   font-size: 75px;
@@ -795,14 +809,15 @@ a:focus {
 
 @media (max-width: 575.98px) {
   .service .service-text h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
+      font-size: 16px;
+      margin-bottom: 5px;
   }
-
+  
   .service .service-text p {
-    font-size: 14px;
+      font-size: 14px;
   }
 }
+
 
 /*******************************/
 /******** Portfolio CSS ********/
@@ -861,11 +876,11 @@ a:focus {
 
 .portfolio .portfolio-img img {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 100%; 
+  height: 100%; 
   object-fit: cover;
   transform: scale(1.1);
-  transition: 0.5s;
+  transition: .5s;
 }
 
 .portfolio .portfolio-item:hover img {
@@ -880,7 +895,7 @@ a:focus {
   display: flex;
   align-items: center;
   background: #ffffff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 15px rgba(0, 0, 0, .12);
 }
 
 .portfolio .portfolio-text h3 {
@@ -909,6 +924,7 @@ a:focus {
   box-shadow: inset 0 0 0 0 #1c3448;
   border-color: #1c3448;
 }
+
 
 /*******************************/
 /********* Banner CSS **********/
@@ -967,6 +983,7 @@ a:focus {
   border-color: #ffffff;
 }
 
+
 /*******************************/
 /********* Pricing CSS *********/
 /*******************************/
@@ -991,7 +1008,7 @@ a:focus {
 }
 
 .price .featured-item {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .2);
   z-index: 1;
 }
 
@@ -1066,10 +1083,10 @@ a:focus {
 }
 
 .price .price-item .price-action .btn:hover {
-  color: #414141;
+  color: #1c3448;
   background: transparent;
-  box-shadow: inset 0 0 0 0 #414141;
-  border-color: #414141;
+  box-shadow: inset 0 0 0 0 #1c3448;
+  border-color: #1c3448;
 }
 
 .price .price-item.featured-item .price-action .btn {
@@ -1084,6 +1101,7 @@ a:focus {
   box-shadow: inset 0 0 0 0 #1c3448;
   border-color: #1c3448;
 }
+
 
 /*******************************/
 /*********** Team CSS **********/
@@ -1114,7 +1132,7 @@ a:focus {
 .team .team-img img {
   position: relative;
   width: 100%;
-  transition: 0.5s;
+  transition: .5s;
 }
 
 .team .team-text {
@@ -1184,26 +1202,27 @@ a:focus {
   border-color: #ffffff;
 }
 
-@media (max-width: 575.98px) {
+@media(max-width: 575.98px) {
   .team .team-text {
-    padding: 0 15px;
+      padding: 0 15px;
   }
-
+  
   .team .team-text h2 {
-    font-size: 16px;
-    margin-bottom: 0;
+      font-size: 16px;
+      margin-bottom: 0;
   }
 
   .team .team-text h4 {
-    margin-bottom: 5px;
+      margin-bottom: 5px;
   }
 
   .team .team-text p {
-    font-size: 14px;
-    line-height: 18px;
-    margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 10px;
   }
 }
+
 
 /*******************************/
 /******* Testimonial CSS *******/
@@ -1226,7 +1245,7 @@ a:focus {
 
 .testimonial .testimonial-icon i {
   font-size: 60px;
-  color: rgba(256, 256, 256, 0.5);
+  color: rgba(256, 256, 256, .5);
 }
 
 .testimonial .testimonial-item {
@@ -1264,7 +1283,7 @@ a:focus {
 }
 
 .testimonial .testimonial-text h3 {
-  color: #ef233c;
+  color: #1c3448;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -1287,12 +1306,13 @@ a:focus {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: rgba(256, 256, 256, 0.5);
+  background: rgba(256, 256, 256, .5);
 }
 
 .testimonial .owl-dot.active {
   background: #ffffff;
 }
+
 
 /*******************************/
 /********* Contact CSS *********/
@@ -1410,6 +1430,7 @@ a:focus {
   }
 }
 
+
 /*******************************/
 /*********** Blog CSS **********/
 /*******************************/
@@ -1432,7 +1453,7 @@ a:focus {
 
 .blog .blog-img img {
   width: 100%;
-  transition: 0.5s;
+  transition: .5s;
 }
 
 .blog .blog-item:hover img {
@@ -1442,9 +1463,9 @@ a:focus {
 .blog .blog-text {
   position: relative;
   padding: 30px;
-  border-right: 1px solid rgba(0, 0, 0, 0.07);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-  border-left: 1px solid rgba(0, 0, 0, 0.07);
+  border-right: 1px solid rgba(0, 0, 0, .07);
+  border-bottom: 1px solid rgba(0, 0, 0, .07);
+  border-left: 1px solid rgba(0, 0, 0, .07);
 }
 
 .blog .blog-text h2 {
@@ -1485,133 +1506,93 @@ a:focus {
   margin: 0;
 }
 
-/*******************************/
-/********* Footer CSS **********/
-/*******************************/
-.footer {
-  position: relative;
-  margin-top: 45px;
+
+/***Footer Styles***/
+footer {
   background: #1c3448;
+  border-top: 1px solid;
+  min-height: 300px;
+  padding-top: 20px;
 }
-
-.footer .container-fluid {
-  padding: 60px 0 0 0;
-}
-
-.footer .footer-info {
-  position: relative;
-  width: 100%;
-  text-align: center;
-}
-
-.footer .footer-info h2 {
-  margin-bottom: 20px;
-  font-size: 30px;
-  font-weight: 700;
+footer a {
   color: #ffffff;
 }
-
-.footer .footer-info h3 {
-  margin-bottom: 25px;
-  font-size: 22px;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.footer .footer-menu {
-  width: 100%;
+.footer--container {
   display: flex;
-  justify-content: center;
+  padding-left: 100px;
+  text-align: left;
 }
-
-.footer .footer-menu p {
-  color: #ffffff;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 20px;
-  padding: 0 15px;
-  border-right: 1px solid #ffffff;
+.footer--container img {
+  margin-bottom: 20px;
 }
-
-.footer .footer-menu p:last-child {
-  border: none;
+.footer--container>:first-child {
+  margin-right: 110px !important; 
+  width: fit-content;
 }
-
-.footer .footer-social {
-  position: relative;
-  margin-top: 15px;
-}
-
-.footer .footer-social a {
-  display: inline-block;
-}
-
-.footer .footer-social a i {
-  margin-right: 15px;
-  font-size: 20px;
-  color: #ffffff;
-  transition: 0.3s;
-}
-
-.footer .footer-social a:last-child i {
-  margin: 0;
-}
-
-.footer .footer-social a:hover i {
-  color: #414141;
-}
-
-.footer .copyright {
-  position: relative;
-  text-align: center;
-  margin-top: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.footer .copyright::before {
-  position: absolute;
-  content: "";
-  width: 50%;
-  height: 1px;
-  top: 0;
-  left: 25%;
-  background: rgba(256, 256, 256, 0.2);
-}
-
-.footer .copyright p {
-  margin: 0;
+.footer-social {
   color: #ffffff;
 }
-
-.footer .copyright .col-md-6:last-child p {
-  text-align: right;
+.footer--container>div:not(:last-of-type) {
+  margin-right: 50px;
 }
-
-.footer .copyright p a {
+.footer--container>div {
+  display: flex;
+  flex-direction: column;
+  width: 188px;
+  height: 192px;
+}
+.footer--container h4 {
+  margin-top: 0;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  font-size: 16px;
+  letter-spacing: .5px;
+  margin: 1.33em 0;
   color: #ffffff;
-  font-weight: 600;
+}
+/*.footer--container>div span:not(:last-of-type) {
+   margin-bottom: 10px; 
+}*/
+.footer--container>div span {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: .5px;
+  color: #fff;
+}
+.footer--container>div a:hover {
+  color: #fff;
+}
+.collpase__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
 }
 
-.footer .copyright p a:hover {
-  color: #414141;
+@media screen and (max-width: 698px) {
+  #footer {
+    background-color: #1c3448;
+    text-align: left;
+    padding: 10px;
+    display: block;
 }
-
-@media (max-width: 575.98px) {
-  .footer .footer-info h2 {
+.footer--container {
+  display: block;
+}
+  #footer .footer__mobile {
+    display: block;
+}
+  .footer__mobile>div {
     margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: 600;
-  }
-
-  .footer .footer-info h3 {
-    margin-bottom: 20px;
-    font-size: 16px;
-  }
-
-  .footer .footer-menu p {
-    font-size: 16px;
-    line-height: 16px;
-    padding: 0 5px;
-  }
 }
+  .footer__mobile img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+img {
+    border: 0;
+}
+}
+  
