@@ -761,28 +761,21 @@ a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #1c3448;
+  /* border: 1px solid #1c3448; */
   background: #ffffff;
 }
 .service-icon img {
   position: relative;
-  width: 150px;
-  min-height: 150px;
+  width: 110px;
+  min-height: 110px;
   display: flex;
   align-items: center;
   color: #1c3448;
-  border: 1px solid #1c3448;
+  /* border: 1px solid #1c3448; */
   justify-content: center;
   background: #ffffff;
   transition: 0.3s;
 }
-/* .service .service-icon i {
-  position: relative;
-  font-size: 60px;
-  color: #1c3448;
-  transition: .3s;
-} */
-
 .service .service-item:hover i {
   font-size: 75px;
 }
@@ -798,6 +791,7 @@ a:focus {
   font-size: 20px;
   font-weight: 600;
   transition: 1s;
+  color: #1c3448;
 }
 
 .service .service-text p {
@@ -819,6 +813,20 @@ a:focus {
 
   .service .service-text p {
     font-size: 14px;
+  }
+  .service .service-icon {
+    width: 90px;
+    height: 90px;
+    border: none;
+  }
+  .service-icon img {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 280px) {
+  .service-item {
+    height: 100%;
   }
 }
 
@@ -1487,12 +1495,16 @@ footer {
   min-height: 300px;
   padding-top: 20px;
 }
+.contain {
+  margin-left: auto;
+  margin-right: auto;
+}
 footer a {
   color: #ffffff;
 }
 .footer--container {
   display: flex;
-  padding-left: 100px;
+  padding-left: 200px;
   text-align: left;
 }
 .footer--container img {
@@ -1535,7 +1547,7 @@ footer a {
   color: #fff;
 }
 .footer--container > div a:hover {
-  color: #fff;
+  color: #000;
 }
 .collpase__trigger {
   display: flex;
@@ -1544,15 +1556,20 @@ footer a {
   color: #fff;
 }
 
-@media screen and (max-width: 698px) {
+@media screen and (max-width: 898px) {
   #footer {
     background-color: #1c3448;
     text-align: left;
     padding: 10px;
     display: block;
   }
+  .contain {
+    margin-left: 10px; 
+    margin-right: 10px;
+  }
   .footer--container {
     display: block;
+    padding-left: 5px; 
   }
   #footer .footer__mobile {
     display: block;
@@ -1566,5 +1583,13 @@ footer a {
   }
   img {
     border: 0;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .footer--container > :first-child {
+    width: 100%;
+    overflow-wrap: break-word;
+    margin-bottom: 65px;
   }
 }
