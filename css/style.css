@@ -1491,7 +1491,6 @@ a:focus {
 /***Footer Styles***/
 footer {
   background: #1c3448;
-  border-top: 1px solid;
   min-height: 300px;
   padding-top: 20px;
 }
@@ -1536,9 +1535,6 @@ footer a {
   margin: 1.33em 0;
   color: #ffffff;
 }
-/*.footer--container>div span:not(:last-of-type) {
-   margin-bottom: 10px; 
-}*/
 .footer--container > div span {
   font-style: normal;
   font-size: 14px;
