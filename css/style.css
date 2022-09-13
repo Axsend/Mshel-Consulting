@@ -1254,7 +1254,11 @@ a:focus {
 .testimonial .testimonial-peek {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 6px;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  justify-content: center;
+  text-align: center;
 }
 .testimonial .testimonial-detail {
   cursor: pointer;
@@ -1285,7 +1289,7 @@ a:focus {
   width: 100%;
   left: 0;
   /* margin: 0 auto; */
-  bottom: 130px;
+  bottom: 160px;
   display: none;
 }
 .testimonial .testimonial-text.active {
@@ -1314,6 +1318,9 @@ a:focus {
   }
   .testimonial .testimonial-text.active::after {
     left: 20rem;
+  }
+  .testimonial .testimonial-peek {
+    text-align: left;
   }
 }
 /* .testimonial .testimonial-icon {
