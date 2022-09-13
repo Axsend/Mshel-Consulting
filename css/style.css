@@ -1245,7 +1245,78 @@ a:focus {
   max-width: 900px;
 }
 
-.testimonial .testimonial-icon {
+.testimonial .testimonial-badges {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.testimonial .testimonial-peek {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.testimonial .testimonial-detail {
+  cursor: pointer;
+}
+.testimonial .testimonial-detail img {
+  /* height: 30px;
+  width: 30px; */
+
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+}
+.testimonial .testimonial-detail .testimonial-title {
+  display: none;
+}
+.testimonial .testimonial-detail.active .testimonial-title {
+  display: block;
+}
+.testimonial .testimonial-detail.active img {
+  transform: scale(1.2);
+}
+.testimonial .testimonial-text {
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 30px 30px;
+  height: 200px;
+  width: 100%;
+  left: 0;
+  /* margin: 0 auto; */
+  bottom: 130px;
+  display: none;
+}
+.testimonial .testimonial-text.active {
+  display: block;
+  /* transform: translate(-50%, -50%); */
+}
+.testimonial .testimonial-text.active::after {
+  content: "";
+  position: absolute;
+  left: 5rem;
+  bottom: 9px;
+  width: 70px;
+  height: 30px;
+  background-color: #fff;
+  transform-origin: bottom left;
+  border-radius: 0 0 15% 0 / 25%;
+  z-index: 0;
+  transform: rotate(28deg);
+  /* transform: skew(55deg); */
+}
+@media (min-width: 600px) {
+  .testimonial .testimonial-detail.active img {
+    /* height: 80px;
+    width: 80px; */
+    transform: scale(0.8);
+  }
+  .testimonial .testimonial-text.active::after {
+    left: 20rem;
+  }
+}
+/* .testimonial .testimonial-icon {
   margin-bottom: 45px;
   text-align: center;
 }
@@ -1318,7 +1389,7 @@ a:focus {
 
 .testimonial .owl-dot.active {
   background: #ffffff;
-}
+} */
 
 /*******************************/
 /********* Contact CSS *********/
@@ -1332,6 +1403,9 @@ a:focus {
   padding: 40px 20px;
   text-align: center;
   box-shadow: 0 0 10px rgb(0 0 0 / 0.2);
+}
+.contact .detail p {
+  word-break: break-all;
 }
 .contact .detail-icon {
   display: flex;
@@ -1560,12 +1634,12 @@ footer a {
     display: block;
   }
   .contain {
-    margin-left: 10px; 
+    margin-left: 10px;
     margin-right: 10px;
   }
   .footer--container {
     display: block;
-    padding-left: 5px; 
+    padding-left: 5px;
   }
   #footer .footer__mobile {
     display: block;
