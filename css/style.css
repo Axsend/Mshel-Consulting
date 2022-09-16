@@ -254,7 +254,7 @@ a:focus {
   position: relative;
   width: 100%;
   margin-bottom: 45px;
-  padding: 120px 0 0 0;
+  padding: 60px 0 0 0;
   overflow: hidden;
   background: #1c3448;
   background-position: center;
@@ -270,7 +270,6 @@ a:focus {
   position: relative;
   text-align: right;
   padding-right: 75px;
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
