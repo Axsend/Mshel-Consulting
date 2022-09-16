@@ -771,7 +771,6 @@ a:focus {
   display: flex;
   align-items: center;
   color: #1c3448;
-  /* border: 1px solid #1c3448; */
   justify-content: center;
   background: #ffffff;
   transition: 0.3s;
@@ -820,8 +819,8 @@ a:focus {
     border: none;
   }
   .service-icon img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
 }
 @media (max-width: 280px) {
